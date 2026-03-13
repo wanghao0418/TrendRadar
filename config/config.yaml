@@ -42,6 +42,17 @@ app:
 schedule:
   enabled: true                         # 是否启用调度系统
   preset: "morning_evening"             # 预设模板名称（见上方说明）
+  
+  # 自定义推送时间
+  custom:
+    morning:
+      push: true
+      time: "08:00"
+      analysis: true
+    evening:
+      push: true
+      time: "20:00"
+      analysis: true
 
 
 # ===============================================================
@@ -319,7 +330,7 @@ notification:
       webhook_url: ""                 # 飞书机器人 webhook URL
 
     dingtalk:
-      webhook_url: ""                 # 钉钉机器人 webhook URL
+      webhook_url: "https://oapi.dingtalk.com/robot/send?access_token=8566274217d4f82049fc0bc45a4fad8b70f5f684e7ac04476b261e05492a2753"
 
     wework:
       webhook_url: ""                 # 企业微信机器人 webhook URL
