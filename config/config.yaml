@@ -330,7 +330,7 @@ notification:
       webhook_url: ""                 # 飞书机器人 webhook URL
 
     dingtalk:
-      webhook_url: "https://oapi.dingtalk.com/robot/send?access_token=8566274217d4f82049fc0bc45a4fad8b70f5f684e7ac04476b261e05492a2753"
+      webhook_url: ""                 # 钉钉机器人 webhook URL（配置在 GitHub Secrets 中）
 
     wework:
       webhook_url: ""                 # 企业微信机器人 webhook URL
